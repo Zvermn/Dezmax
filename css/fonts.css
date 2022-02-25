@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Formular';
+    src: url('/css/fonts/Formular/Formular-Black.eot');
+    src: local('Formular Bold'), local('Formular-Bold'),
+        url('/css/fonts/Formular/Formular-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Formular/Formular-Bold.woff2') format('woff2'),
+        url('/css/fonts/Formular/Formular-Bold.woff') format('woff'),
+        url('/css/fonts/Formular/Formular-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('/css/fonts/Formular/Formular.eot');
+    src: local('Formular'),
+        url('/css/fonts/Formular/Formular.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Formular/Formular.woff2') format('woff2'),
+        url('/css/fonts/Formular/Formular.woff') format('woff'),
+        url('/css/fonts/Formular/Formular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('/css/fonts/Formular/Formular-Medium.eot');
+    src: local('Formular Medium'), local('Formular-Medium'),
+        url('/css/fonts/Formular/Formular-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Formular/Formular-Medium.woff2') format('woff2'),
+        url('/css/fonts/Formular/Formular-Medium.woff') format('woff'),
+        url('/css/fonts/Formular/Formular-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/css/fonts/Raleway/Raleway-Black.eot');
+    src: local('Raleway Black'), local('Raleway-Black'),
+        url('/css/fonts/Raleway/Raleway-Black.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Raleway/Raleway-Black.woff') format('woff'),
+        url('/css/fonts/Raleway/Raleway-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/css/fonts/Raleway/Raleway-ExtraBold.eot');
+    src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'),
+        url('/css/fonts/Raleway/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Raleway/Raleway-ExtraBold.woff') format('woff'),
+        url('/css/fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri.eot');
+    src: local('Calibri'),
+        url('/css/fonts/Calibri/Calibri.eot') format('embedded-opentype'),
+        url('/css/fonts/Calibri/Calibri.woff2') format('woff2'),
+        url('/css/fonts/Calibri/Calibri.woff') format('woff'),
+        url('/css/fonts/Calibri/Calibri.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri-Light.eot');
+    src: local('Calibri Light'), local('Calibri-Light'),
+        url('/css/fonts/Calibri/Calibri-Light.eot') format('embedded-opentype'),
+        url('/css/fonts/Calibri/Calibri-Light.woff2') format('woff2'),
+        url('/css/fonts/Calibri/Calibri-Light.woff') format('woff'),
+        url('/css/fonts/Calibri/Calibri-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('/css/fonts/SegoeUI/SegoeUI-Bold.eot');
+    src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
+        url('/css/fonts/SegoeUISegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/SegoeUISegoeUI-Bold.woff') format('woff'),
+        url('/css/fonts/SegoeUISegoeUI-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
