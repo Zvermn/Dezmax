@@ -79,7 +79,7 @@ li {
     font-weight: 300;
     font-size: 20px;
     line-height: 1.4;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 p {
@@ -101,35 +101,63 @@ body {
     background-position: center -140px;
 }
 
-
-
-.header-flex {
-    margin: 0 auto;
-    max-width: 1300px;
-    display: flex;
-    min-height: 500px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+main {
+    text-align: center;
 }
 
-.clear-block {
-    border: solid 1px white;
-    width: 33.33%;
-    box-sizing: border-box;
+h1 {
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 46px;
+    color: white;
+    line-height: 0.7;
+    letter-spacing: 0em;
+    padding: 20px 60px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 240px;
+}
+
+h2 {
+    font-family: Raleway;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-family: Calibri;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 26px;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header {
+    margin: 0 auto;
+    width: 1300px;
+    text-align: center;
+    padding-top: 170px;
 }
 
 .brand {
-    border: solid 1px white;
-    width: 33.33%;
     box-sizing: border-box;
-    align-self: flex-end;
+    margin: 0 auto;
     text-align: center;
 }
 
 .header-order {
-    border: solid 1px white;
-    width: 33.33%;
-    align-self: center;
+    /* border: solid 1px white; */
     text-align: end;
     color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
@@ -178,26 +206,6 @@ body {
     margin-bottom: 12px;
 }
 
-main {
-    /* max-width: 1300px;
-    margin: 0 auto; */
-    text-align: center;
-}
-
-h1 {
-    background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    font-family: Raleway;
-    font-weight: 900;
-    font-size: 46px;
-    color: white;
-    line-height: 0.7;
-    letter-spacing: 0em;
-    padding: 20px 60px;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
-    margin-bottom: 240px;
-}
-
 h1 span {
     font-family: Raleway;
     font-size: 24px;
@@ -208,18 +216,7 @@ h1 span {
 
 .services h2 {
     color: white;
-
 }
-
-h2 {
-    font-family: Raleway;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 48px;
-    margin-bottom: 60px;
-
-}
-
 
 .services-flex {
     max-width: inherit;
@@ -246,19 +243,10 @@ h2 {
 
 .wrap-category img {
     margin-bottom: 20px;
-
 }
 
 .item-service h3 {
     margin-bottom: 20px;
-
-}
-
-h3 {
-    font-family: Calibri;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
 }
 
 .services-list {
@@ -276,9 +264,8 @@ h3 {
 }
 
 .wrap-size {
-    max-width: 1300px;
+    width: 1300px;
     margin: 0 auto;
-
 }
 
 .wrap {
@@ -293,20 +280,22 @@ h3 {
 .adventage-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 0 0 5%;
+    flex-direction: column;
+    height: 270px;
+    align-content: space-between;
+    width: 860px;
+    margin: 0 auto;
     background-image: url(/css/img/Vector.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .adventage-list li {
-    flex: 0 1 50%;
     text-align: left;
-    padding: 0 12% 15px 12%;
+    width: 340px;
 }
 
 .simple-procedure {
-
     background-color: rgba(201, 246, 255, 0.4);
     padding: 20px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
@@ -328,12 +317,12 @@ h3 {
     display: flex;
     text-align: left;
     justify-content: space-between;
-    margin: 0 220px;
+    margin: 0 auto;
+    width: 860px;
 }
 
 .procedure-list li {
     flex: 0 0 33.33%;
-    padding-left: 20px;
 }
 
 .wrap-procedure {
@@ -341,16 +330,7 @@ h3 {
     height: 500px;
 }
 
-/* format H4 */
-h4 {
-    margin-bottom: 15px;
-    font-family: Segoe UI;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.procedure-list li span {
+.procedure-list li .procedure-list-tel {
     color: white;
     font-family: Formular;
     font-weight: bold;
@@ -375,29 +355,111 @@ h4 {
 }
 
 .pre-processing p {
-    padding: 0 50px 30px 50px;
+    padding: 0 0 30px 15px;
     text-align: left;
+
 }
 
 .wrap-size.pre-processing {
-    padding: 0 140px;
+    width: 895px;
 }
-
-
 
 .pre-processing-list {
     display: flex;
+    flex-direction: column;
+    align-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-between;
+    height: 570px;
     text-align: left;
-    margin-bottom: 30px;
+    margin: 0 auto;
 }
 
 .pre-processing-list li {
     list-style-image: url(/css/img/list-style.svg);
-    padding: 0 10% 15px 22px;
-    flex: 0 1 45%;
     list-style-position: outside;
+    width: 370px;
+    padding-left: 15px;
+}
+
+.wrap-size.processing {
+    height: 550px;
+    background-image: url(/css/img/Processing.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 170px;
+}
+
+.processing-textblock-1 {
+    width: 860px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.processing-downloadblock {
+    width: 860px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.processing-downloadblock li {
+    text-align: left;
+}
+
+.processing-textblock2 {
+    width: 860px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.processing-downloadblock a {
+    display: inline-block;
+    height: 32px;
+    font-family: Calibri;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.img-download {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(/css/img/Document.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.roach-death {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roach-death p {
+    text-align: left;
+    text-indent: 0;
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.roach-death button {
+    border-color: rgba(255, 168, 0, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #FFA800;
+    border-radius: 27px;
+    padding: 10px 50px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Formular;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 
