@@ -88,7 +88,23 @@ p {
     font-weight: 300;
     font-size: 20px;
     line-height: 1.4;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+span {
+    font-family: Calibri;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+}
+
+strong {
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 ul {
@@ -96,13 +112,28 @@ ul {
 }
 
 body {
-    background-image: url(/css/img/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center -140px;
+    background-image: url(/css/img/whitebg.svg), url(/css/img/bg.jpg);
+    background-repeat: repeat-x, no-repeat;
+    background-position: 0 1020px, center -140px;
+    background-size: auto 250px, auto auto;
 }
 
 main {
     text-align: center;
+}
+
+button {
+    border-color: rgba(255, 168, 0, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #FFA800;
+    border-radius: 27px;
+    padding: 10px 30px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Formular;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -157,7 +188,6 @@ h4 {
 }
 
 .header-order {
-    /* border: solid 1px white; */
     text-align: end;
     color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
@@ -192,17 +222,6 @@ h4 {
 }
 
 .header-order button {
-    border-color: rgba(255, 168, 0, 1);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background-color: #FFA800;
-    border-radius: 27px;
-    padding: 10px 30px;
-    color: rgba(255, 255, 255, 1);
-    font-family: Formular;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 16px;
-    text-transform: uppercase;
     margin-bottom: 12px;
 }
 
@@ -218,8 +237,12 @@ h1 span {
     color: white;
 }
 
-.services-flex {
-    max-width: inherit;
+.wrap-size {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.services-block {
     display: flex;
     justify-content: space-between;
 }
@@ -245,46 +268,21 @@ h1 span {
     margin-bottom: 20px;
 }
 
-.item-service h3 {
-    margin-bottom: 20px;
-}
-
 .services-list {
-    font-family: Calibri;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.7;
-    width: 100%;
     text-align: left;
 }
 
-.services {
-    transform: translateY(-170px);
-}
-
-.wrap-size {
-    width: 1300px;
+.wrap-sizesmall {
+    width: 860px;
     margin: 0 auto;
 }
 
-.wrap {
-    background-color: white;
-}
-
-.adventage {
-    width: 100%;
-    margin-bottom: 110px;
-}
-
+/* #Адаптив не работает по высоте и ширине если расстояния между Li будут одинаковые*/
 .adventage-list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 270px;
-    align-content: space-between;
-    width: 860px;
-    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
     background-image: url(/css/img/Vector.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -292,15 +290,22 @@ h1 span {
 
 .adventage-list li {
     text-align: left;
-    width: 340px;
+    flex: 0 1 35%;
 }
 
-.simple-procedure {
+/* #---------------------------------------- */
+.simple-procedure .wrap-category {
     background-color: rgba(201, 246, 255, 0.4);
     padding: 20px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-    margin-bottom: 60px;
+    margin: 0 0 60px 0;
+    max-width: inherit;
+}
+
+.wrap-procedure-bg {
+    background-color: rgb(3, 3, 3);
+    padding-bottom: 80px;
 }
 
 .procedure-list li, h4 {
@@ -309,7 +314,7 @@ h1 span {
 
 .simple-procedure h2 {
     color: white;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .procedure-list {
@@ -318,16 +323,10 @@ h1 span {
     text-align: left;
     justify-content: space-between;
     margin: 0 auto;
-    width: 860px;
 }
 
 .procedure-list li {
     flex: 0 0 33.33%;
-}
-
-.wrap-procedure {
-    background-color: rgb(3, 3, 3);
-    height: 500px;
 }
 
 .procedure-list li .procedure-list-tel {
@@ -347,41 +346,28 @@ h1 span {
 .foto-procedure {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
-}
-
-.wrap-size:first-child p {
-    margin-bottom: 30px;
 }
 
 .pre-processing p {
-    padding: 0 0 30px 15px;
     text-align: left;
-
-}
-
-.wrap-size.pre-processing {
-    width: 895px;
 }
 
 .pre-processing-list {
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
-    height: 570px;
     text-align: left;
-    margin: 0 auto;
+
 }
 
 .pre-processing-list li {
     list-style-image: url(/css/img/list-style.svg);
     list-style-position: outside;
-    width: 370px;
     padding-left: 15px;
+    flex: 0 1 375px;
 }
 
-.wrap-size.processing {
+.wrap-processing-bg {
     height: 550px;
     background-image: url(/css/img/Processing.jpg);
     background-repeat: no-repeat;
@@ -389,28 +375,14 @@ h1 span {
     padding-top: 170px;
 }
 
-.processing-textblock-1 {
-    width: 860px;
-    margin: 0 auto;
-    text-align: left;
-    margin-bottom: 60px;
-}
-
 .processing-downloadblock {
-    width: 860px;
     display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .processing-downloadblock li {
     text-align: left;
-}
-
-.processing-textblock2 {
-    width: 860px;
-    margin: 0 auto;
-    text-align: left;
+    flex: 0 1 33.333%;
 }
 
 .processing-downloadblock a {
@@ -448,22 +420,137 @@ h1 span {
     font-size: 24px;
 }
 
-.roach-death button {
-    border-color: rgba(255, 168, 0, 1);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background-color: #FFA800;
-    border-radius: 27px;
-    padding: 10px 50px;
-    color: rgba(255, 255, 255, 1);
-    font-family: Formular;
+.prices table {
+    width: 100%;
+    border-spacing: 0 8px;
+    text-align: left;
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.wrap-table1, .wrap-table2 {
+    position: relative;
+}
+
+.wrap-table1 img {
+    border-radius: 50%;
+    border: solid white 40px;
+    position: absolute;
+    top: 0;
+    right: -148px;
+}
+
+.wrap-table2 img {
+    border-radius: 50%;
+    border: solid white 40px;
+    position: absolute;
+    top: 0;
+    right: -148px;
+}
+
+.prices caption {
+    text-align: left;
+    font-family: Calibri;
     font-weight: bold;
     font-style: normal;
-    font-size: 16px;
-    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 26px;
+    padding-left: 45px;
+}
+
+.prices table td:nth-child(2) {
+    width: 57%;
+}
+
+.wrap-table1 td {
+    padding: 12px 45px;
+    background-color: rgba(201, 246, 255, 1);
+}
+
+.wrap-table2 td {
+    padding: 12px 45px;
+    background-color: #EFEFEF;
 }
 
 
+.form-order {
+    width: 342px;
+    margin: 0 auto;
+    text-align: left;
+}
 
+.form-order input[type=text] {
+    display: block;
+    border: solid 1px #D2C5BA;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* #Заменить квадрат в ебучем инпуте и шрифт */
+.input-agreement {
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.form-order button {
+    display: block;
+    margin: 0 auto;
+}
+
+.services, .adventage, .simple-procedure, .pre-processing, .processing, .after-processing, .prices, .form-send-order {
+    margin-bottom: 60px;
+}
+
+footer .wrap-footer-content {
+    background-color: rgba(201, 246, 255, 0.4);
+    padding-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.footer-bg {
+    background-color: black;
+    padding: 60px 0;
+}
+
+.footer-bg .wrap-size {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.info span {
+    padding-bottom: 5px;
+}
+
+.info, .autor {
+    align-self: end;
+}
+
+.info .tel {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.logo {
+    /* #Заменить логотип */
+}
+
+.info .year {
+    display: inline-block;
+    margin-top: 35px;
+    color: rgba(136, 136, 136, 1);
+}
+
+/* .autor {
+    align-self: end;
+} */
 
 @media (max-width: 768px) {
     .clear-block, .brand, .header-order {
