@@ -81,6 +81,18 @@
 }
 
 @font-face {
+    font-family: 'Calibri';
+    src: url('/css/fonts/Calibri/Calibri-Bold.eot');
+    src: local('Calibri Bold'), local('Calibri-Bold'),
+        url('/css/fonts/Calibri/Calibri-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/css/fonts/Calibri/Calibri-Bold.woff2') format('woff2'),
+        url('/css/fonts/Calibri/Calibri-Bold.woff') format('woff'),
+        url('/css/fonts/Calibri/Calibri-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Segoe UI';
     src: url('/css/fonts/SegoeUI/SegoeUI-Bold.eot');
     src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
