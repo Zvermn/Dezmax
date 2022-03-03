@@ -246,9 +246,10 @@ h1 span {
 }
 
 .wrap-size {
-    max-width: 1300px;
+    max-width: 1360px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 .services-block {
@@ -282,7 +283,8 @@ h1 span {
 }
 
 .wrap-sizesmall {
-    width: 860px;
+    max-width: 860px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -296,6 +298,7 @@ h1 span {
     background-image: url(/css/img/Vector.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 
 .adventage-list li {
@@ -315,7 +318,7 @@ h1 span {
 
 .wrap-simple-procedure-bg {
     background-color: rgb(3, 3, 3);
-    padding-bottom: 80px;
+    padding: 0 30px 80px;
 }
 
 .link {
@@ -483,7 +486,7 @@ h1 span {
     border-radius: 50%;
     border: solid white 40px;
     position: absolute;
-    top: 0;
+    top: 0px;
     right: -148px;
 }
 
@@ -492,13 +495,14 @@ h1 span {
     font-family: Calibri;
     font-weight: bold;
     font-style: normal;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 26px;
     padding-left: 45px;
 }
 
 .prices table td:nth-child(2) {
     width: 57%;
+
 }
 
 .wrap-table1 td {
@@ -706,9 +710,12 @@ button:hover {
     cursor: pointer;
 }
 
+/* >begin                                                 */
 @media screen and (max-width: 1365px) and (min-width:1024px) {
 
-
+    h1 {
+        margin-bottom: 622px;
+    }
 
     .header-order {
         padding: 0 40px;
@@ -720,19 +727,16 @@ button:hover {
     }
 
     .simple-procedure-foto {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
-    .simple-procedure-foto img:last-child {
-        display: none;
-    }
-
-    .wrap-processing-bg {
-        background-size: 100%;
+    p, strong {
+        font-size: 20px;
     }
 
     .wrap-table1 img, .wrap-table2 img {
         right: -48px;
+
     }
 
     .services, .adventage, .simple-procedure, .pre-processing, .processing, .after-processing, .prices, .form-send-order {
@@ -740,6 +744,7 @@ button:hover {
     }
 }
 
+/* >                                                     */
 
 
 
@@ -764,17 +769,18 @@ button:hover {
     }
 
     h1 {
-        background: rgba(0, 0, 0, 0.5);
-        display: inline-block;
-        font-family: Raleway;
-        font-weight: 800;
         font-size: 28px;
-        color: white;
         line-height: 1;
-        letter-spacing: 0em;
-        padding: 20px 60px;
-        text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
-        margin-bottom: 350px;
+        margin-bottom: 490px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    li {
+        font-size: 16px;
+        line-height: 1;
     }
 
     h1 span {
@@ -785,17 +791,68 @@ button:hover {
         letter-spacing: 0em;
     }
 
+
+
+    .pre-processing-list li {
+        flex: 0 1 50%;
+        padding: 0 25px 20px;
+
+    }
+
+    .wrap-size {
+        padding: 0;
+    }
+
+    .wrap-sizesmall {
+        max-width: 860px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    .simple-procedure-foto {
+        justify-content: space-evenly;
+    }
+
+
+    .processing-downloadblock>li {
+        flex: 0 1 50%;
+        padding: 0 40px 20px;
+    }
+
+    .prices table {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .wrap-table1 img, .wrap-table2 img {
+        right: 0px;
+    }
+
+    .prices table td {
+
+        padding: 12px 20px;
+    }
+
+    strong, p {
+        font-size: 16px;
+
+    }
+
+
 }
 
 @media screen and (max-width: 1365px) and (min-width:360px) {
 
-    h1 {
-        color: red;
-        margin-bottom: 466px;
-    }
+
+
 
     .services h2 {
         color: black;
+    }
+
+    .wrap-processing-bg {
+        background-size: 100%;
     }
 
     .services {
@@ -807,7 +864,7 @@ button:hover {
 
     .wrap-category {
         background-color: unset;
-        padding: 25px 20px;
+        padding: 25px 10px;
         box-shadow: none;
         border-radius: 0;
         flex: 0 1 auto;
@@ -820,10 +877,69 @@ button:hover {
         height: 100%;
     }
 
+    .simple-procedure-list .simple-procedure-list-tel {
+        transform: unset;
+        padding: 8px 16px;
+        font-size: 18px;
+    }
+
+    .simple-procedure-foto picture:last-child {
+        display: none;
+    }
+
+    .roach-death p {
+        font-size: 18px;
+    }
+
     body {
         background-image: url(/css/img/bg.jpg);
         background-repeat: no-repeat;
         background-position: center -140px;
         background-size: auto auto;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width:320px) {
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 140px;
+    }
+
+    .header-order {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 480px) and (min-width:320px) {
+    body {
+        background-image: url(/css/img/header-bg-480.jpg);
+    }
+
+    .brand img {
+        width: 123px;
+        height: 118px;
+    }
+
+    .brand span {
+        font-size: 12px;
+        padding: 0 160px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+
+    h1 span {
+        display: none;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 1.2;
+        padding: 20px 90px;
+        background: rgba(0, 0, 0, 1);
+        /* margin: 0 100px; */
     }
 }
