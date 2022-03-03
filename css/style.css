@@ -517,7 +517,7 @@ h1 span {
 
 /* >section form-order                               */
 .form-order {
-    width: 342px;
+    max-width: 342px;
     margin: 0 auto;
     text-align: left;
 }
@@ -713,8 +713,20 @@ button:hover {
 /* >begin                                                 */
 @media screen and (max-width: 1365px) and (min-width:1024px) {
 
+    body {
+        background-image: url(/css/img/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center -90px;
+        background-size: 170%;
+    }
+
+    .header {
+        /* padding-top: 290px; */
+    }
+
+
     h1 {
-        margin-bottom: 622px;
+        margin-bottom: 480px;
     }
 
     .header-order {
@@ -751,6 +763,14 @@ button:hover {
 
 @media screen and (max-width: 1023px) and (min-width:768px) {
 
+    body {
+        background-image: url(/css/img/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center -100px;
+        background-size: 180%;
+    }
+
+
     .header {
         display: flex;
         flex-direction: column-reverse;
@@ -771,7 +791,10 @@ button:hover {
     h1 {
         font-size: 28px;
         line-height: 1;
-        margin-bottom: 490px;
+        margin-bottom: 185px;
+        max-width: 651px;
+        padding: 20px 40px;
+
     }
 
     h2 {
@@ -791,12 +814,9 @@ button:hover {
         letter-spacing: 0em;
     }
 
-
-
     .pre-processing-list li {
         flex: 0 1 50%;
         padding: 0 25px 20px;
-
     }
 
     .wrap-size {
@@ -808,6 +828,10 @@ button:hover {
         width: 100%;
         margin: 0 auto;
         padding: 0 30px;
+    }
+
+    .wrap-simple-procedure-bg {
+        padding: 0 15px 84px;
     }
 
     .simple-procedure-foto {
@@ -836,35 +860,289 @@ button:hover {
 
     strong, p {
         font-size: 16px;
-
     }
-
 
 }
 
-@media screen and (max-width: 1365px) and (min-width:360px) {
+@media screen and (max-width: 767px) and (min-width:0px) {
+    body {
+        background-image: url(/css/img/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-size: 180%;
+    }
+
+    .brand img {
+        width: 123px;
+        height: 118px;
+    }
+
+    .brand span {
+        font-size: 12px;
+        padding: 0 160px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
 
 
+    h1 span {
+        display: none;
+    }
 
+    h1 {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 1.2;
+        padding: 20px 80px;
+        background: rgba(0, 0, 0, 1);
+        max-width: 500px;
+        margin: 15px 25px 70px;
+    }
+
+    .services-block {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        padding: 0 50px 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .adventage-list {
+        align-items: flex-start;
+        background-image: unset;
+        flex-direction: column;
+    }
+
+    .wrap-size {
+        padding: 0 20px;
+    }
+
+    .adventage-list li {
+        text-align: left;
+        flex: 0 1 35%;
+        background-image: url(/css/img/List-style-type-li.svg);
+        background-repeat: no-repeat;
+        padding: 0 25px 30px;
+    }
+
+    .simple-procedure-list {
+        flex-direction: column;
+    }
+
+    .wrap-simple-procedure-bg {
+        padding: 0 40px 80px;
+    }
+
+    .simple-procedure-foto picture:nth-child(2) {
+        display: none;
+    }
+
+    .simple-procedure-foto.wrap-size {
+        text-align: center;
+        padding: 0;
+    }
+
+    .wrap-sizesmall {
+        padding: 0 20px;
+    }
+
+    .wrap-sizesmall h2 {
+        padding: 20px;
+    }
+
+    .simple-procedure {
+        margin-bottom: 30px;
+    }
+
+    .pre-processing {
+        margin-bottom: 30px;
+    }
+
+    .pre-processing-list {
+        text-align: left;
+        padding-left: 23px;
+        flex-direction: column;
+    }
+
+    .pre-processing-list li {
+        flex: 0 1 auto;
+    }
+
+    .wrap-processing-bg {
+        height: 320px;
+        padding-top: 100px;
+    }
+
+    .processing-downloadblock {
+        margin: 30px;
+        flex-direction: column;
+    }
+
+    .roach-death {
+        flex-direction: column;
+    }
+
+    .after-processing {
+        margin-bottom: 30px;
+    }
+
+    .prices.wrap-sizesmall {
+        padding: 0;
+    }
+
+    .prices table {
+        font-size: 16px;
+    }
+
+    .prices caption {
+        background-color: #fff;
+        padding: 20px 40px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .wrap-table1 img, .wrap-table2 img {
+        top: -190px;
+        right: 85px;
+        z-index: -1;
+    }
+
+    .prices table td:nth-child(2) {
+        width: 45%;
+    }
+
+    .wrap-table1 td {
+        padding: 12px 15px;
+        background-color: rgba(201, 246, 255, 1);
+    }
+
+    .wrap-table2 td {
+        padding: 12px 15px;
+        background-color: #EFEFEF;
+    }
+
+    .prices.wrap-sizesmall h2 {
+        margin-bottom: 200px;
+    }
+
+    .wrap-table1 {
+        margin-bottom: 220px;
+    }
+
+    .footer-bg .wrap-size {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .e-mail, .logo {
+        margin-bottom: 25px;
+    }
+
+    .autor {
+        align-self: unset;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 479px) and (min-width:0px) {
+
+    body {
+        background-image: url(/css/img/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center -55px;
+        background-size: 220%;
+    }
+
+    .header {
+        padding-top: 90px;
+    }
+
+    .brand span {
+        padding: 0 90px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        padding: 15px 20px;
+        margin: 15px 20px 18px;
+    }
+
+    h2 {
+        padding: 0 0px 20px;
+    }
+
+    .services.wrap-size {
+        padding: 25px 10px 0 10px;
+        width: 90%;
+    }
+
+    .wrap-sizesmall h2 {
+        padding: 20px 0 0 0;
+    }
+
+    .wrap-simple-procedure-bg {
+        padding: 0 20px 80px;
+    }
+
+    .simple-procedure-foto.wrap-size img {
+        max-width: 360px;
+        width: 100%;
+    }
+
+    .processing .wrap-processing-bg {
+        background-size: 190%;
+    }
+
+    .wrap-table1 img, .wrap-table2 img {
+        top: -190px;
+        right: 35px;
+        z-index: -1;
+    }
+
+    /* todo текст в таблице */
+    .prices table {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .prices table tbody td:nth-child(2) {
+        width: 35%;
+        padding-left: 0;
+    }
+
+    main .form-send-order {
+        padding: 0 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1365px) and (min-width:0px) {
 
     .services h2 {
         color: black;
     }
 
     .wrap-processing-bg {
-        background-size: 100%;
+        background-size: 170%;
     }
 
     .services {
         padding: 25px 80px 0 80px;
-        background-color: rgba(201, 246, 255, 0.4);
+        background-color: rgba(201, 246, 255, 1);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-        border-radius: 8px;
+        border-radius: 0;
     }
 
     .wrap-category {
         background-color: unset;
-        padding: 25px 10px;
+        padding: 10px 10px;
         box-shadow: none;
         border-radius: 0;
         flex: 0 1 auto;
@@ -891,55 +1169,26 @@ button:hover {
         font-size: 18px;
     }
 
-    body {
-        background-image: url(/css/img/bg.jpg);
-        background-repeat: no-repeat;
-        background-position: center -140px;
-        background-size: auto auto;
-    }
 }
 
-@media screen and (max-width: 1023px) and (min-width:320px) {
+@media screen and (max-width: 1023px) and (min-width:0px) {
     .header {
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 140px;
     }
 
     .header-order {
         text-align: center;
     }
 
-}
-
-@media screen and (max-width: 480px) and (min-width:320px) {
-    body {
-        background-image: url(/css/img/header-bg-480.jpg);
-    }
-
-    .brand img {
-        width: 123px;
-        height: 118px;
-    }
-
-    .brand span {
-        font-size: 12px;
-        padding: 0 160px;
-        line-height: 1.1;
-        margin-bottom: 10px;
-    }
-
-
-    h1 span {
-        display: none;
-    }
-
-    h1 {
-        font-weight: 900;
-        font-size: 24px;
+    li {
+        font-size: 16px;
         line-height: 1.2;
-        padding: 20px 90px;
-        background: rgba(0, 0, 0, 1);
-        /* margin: 0 100px; */
     }
+
+    p, strong {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
 }
