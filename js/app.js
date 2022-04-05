@@ -23,3 +23,27 @@ document.addEventListener('click', (e) => {
         popUp.classList.remove('active');
     }
 });
+
+
+
+// localStorage.setItem('count', 0);
+let buttonSendOrder = document.querySelectorAll('.send-order');
+buttonSendOrder.forEach(buttonOrder => {
+    buttonOrder.addEventListener('click', countClick);
+});
+function countClick() {
+
+    if (localStorage.getItem("count") == 0) {
+        let userClick = 1;
+        localStorage.setItem('count', userClick);
+        console.log(userClick);
+    } else {
+        userClick = localStorage.getItem('count') + 1;
+        localStorage.setItem('count', userClick);
+    };
+
+    // userClick = userClick + 1;
+
+    // userClick = localStorage.getItem("count");
+
+};
