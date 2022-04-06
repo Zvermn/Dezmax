@@ -1305,6 +1305,7 @@ button:hover {
         background-position: center 3px;
         margin-right: 0px;
         background-size: 50%;
+    }
 }
 
 @media screen and (max-width: 240px) and (min-width:0px) {
@@ -1315,4 +1316,21 @@ button:hover {
     .header-order a {
         font-size: 1rem;
     }
+}
+
+
+.huy {
+    display: none;
+}
+
+.huy h2 {
+    text-align: center;
+}
+
+.huy.active {
+    display: block;
+}
+
+.show-hide{
+    display: none;
 }
