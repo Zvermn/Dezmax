@@ -24,29 +24,58 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// localStorage.setItem('count', 0);
 let buttonSendOrder = document.querySelectorAll('.send-order');
+console.log(buttonSendOrder);
+
 buttonSendOrder.forEach(buttonOrder => {
     buttonOrder.addEventListener('click', countClick);
 });
+
+let huis;
+
 function countClick() {
 
-    if (localStorage.getItem("count") == 0) {
+
+    console.log(localStorage.getItem("count"));
+
+
+    if (!localStorage.getItem("count")) {
         let userClick = 1;
         localStorage.setItem('count', userClick);
         console.log(userClick);
     } else {
-        userClick = localStorage.getItem('count') + 1;
+        userClick = Number(localStorage.getItem('count')) + 1;
         localStorage.setItem('count', userClick);
     };
 
-    // userClick = userClick + 1;
-
-    // userClick = localStorage.getItem("count");
-
+    localStorage.setItem('dateLastOrder', new Date());
+    console.log(localStorage.getItem('dateLastOrder'));
 };
 
-const input = document.querySelector('.tel-input'); // Запрет вставки текста с помощью paste eventListener 
-input.addEventListener("paste", function (e) {
-    e.preventDefault()
+
+
+if (Number(localStorage.getItem('count')) > 5) {
+
+    huis = document.querySelectorAll('.huy');
+
+    huis.forEach(item => {
+        item.classList.add('active');
+    });
+
+    console.log(huis);
+
+    let wrapForms = document.querySelectorAll('.wrap-form');
+
+    wrapForms.forEach(item => {
+        item.classList.add('show-hide');
+    })
+}
+
+dateLastOrder = new Date();
+
+// ! ЗАпрет вставки из буфера в поле телефон
+let inputTel = document.querySelectorAll(".tel-input");
+inputTel.forEach(el => {
+    el.addEventListener("paste", (e) => { e.preventDefault() });
 });
+
