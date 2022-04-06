@@ -24,8 +24,6 @@ document.addEventListener('click', (e) => {
     }
 });
 
-
-
 // localStorage.setItem('count', 0);
 let buttonSendOrder = document.querySelectorAll('.send-order');
 buttonSendOrder.forEach(buttonOrder => {
@@ -47,3 +45,8 @@ function countClick() {
     // userClick = localStorage.getItem("count");
 
 };
+
+const input = document.querySelector('.tel-input'); // Запрет вставки текста с помощью paste eventListener 
+input.addEventListener("paste", function (e) {
+    e.preventDefault()
+});
